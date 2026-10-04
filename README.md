@@ -21,10 +21,10 @@ client asks for your approval before every tool that changes something.
 
 ```text
 /plugin marketplace add adsgpt-dev/agent-plugins
-/plugin install adsgpt@adsgpt-marketplace
+/plugin install adsgpt@adsgpt-mcp
 ```
 
-Then run `/mcp`, choose `plugin:adsgpt:mcp` and sign in with your AdsGPT account.
+Then run `/mcp`, choose `plugin:adsgpt:adsgpt` and sign in with your AdsGPT account.
 
 ### Claude (web and desktop)
 
@@ -38,12 +38,12 @@ codex plugin marketplace add adsgpt-dev/agent-plugins
 ```
 
 Then open `/plugins` in Codex, or the plugins of the ChatGPT desktop app, install **AdsGPT** from
-`adsgpt-marketplace` and start a new session. Sign in with your AdsGPT account when the client
+`adsgpt-mcp` and start a new session. Sign in with your AdsGPT account when the client
 asks.
 
 ### Grok
 
-Add the marketplace `adsgpt-dev/agent-plugins` and install `adsgpt` from `adsgpt-marketplace`. Grok
+Add the marketplace `adsgpt-dev/agent-plugins` and install `adsgpt` from `adsgpt-mcp`. Grok
 signs in with your AdsGPT account on first use.
 
 ## What it runs, sends and reads
