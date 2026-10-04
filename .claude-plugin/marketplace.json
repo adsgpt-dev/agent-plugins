@@ -1,0 +1,15 @@
+{
+  "name": "adsgpt-marketplace",
+  "description": "The AdsGPT package for AI clients: the AdsGPT MCP server and its skills.",
+  "owner": {
+    "name": "AdsGPT",
+    "url": "https://adsgpt.dev"
+  },
+  "plugins": [
+    {
+      "name": "adsgpt",
+      "source": "./",
+      "description": "Create, review and optimize ad campaigns on the ad platforms connected to AdsGPT, such as Google Ads."
+    }
+  ]
+}
