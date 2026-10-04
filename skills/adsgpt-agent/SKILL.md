@@ -20,7 +20,8 @@ list of connected plugins when you have it.
   queries and the rules of its campaign types.
 - **Read before you change.** Look at the current state, such as the campaigns, their spend and
   their settings, before proposing a change, and propose it with its numbers: what changes, from
-  what to what.
+  what to what. Enabling a campaign names it and says that it starts spending, up to how much per
+  day or in total.
 - **Every change needs the user's yes.** Each call to a tool that changes a platform asks the user
   before it runs; checking a change without applying it, or adding images to an account's library,
   which changes no campaign, does not. Say what you are about to change

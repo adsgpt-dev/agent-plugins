@@ -35,10 +35,13 @@ Write the platform's fields:
     the brand that the site states, such as a figure, a guarantee or a service, not slogans. They
     repeat no text of each other or of the ads.
   - **Structured snippets** (`structuredSnippets`): one, or two with different headers, each a
-    header from Google's list in the language of the ads, such as Types, Brands, Service catalog,
-    Courses, Destinations, Models or Styles (Tipos, Marcas, Servicios, Cursos, Destinos, Modelos,
-    Estilos), and from 3 to 10 values of up to 25 characters, all of the kind the header names,
-    such as the formats under Types: values of another kind are the most common rejection.
+    header from Google's list, in its translation to the language of the ads, and from 3 to 10
+    values of up to 25 characters. Choose the header by what the values are, not by the business:
+    every value must be one of the kind the header names, or the policy review rejects it.
+    - **Types**: kinds of the product, such as ad formats (banner, native, interstitial) or plans.
+    - **Service catalog**: services someone hires, such as mediation, payments or support.
+    - **Brands**, **Models**, **Styles**, **Courses**, **Destinations**: names of brands, models,
+      styles, courses or places.
   - When the site does not give 4 pages, 4 facts or 3 items of a kind, ask the user for what is
     missing, in the same question as anything else you still need.
   - No exclamation marks or decorative symbols in sitelinks or callouts.
