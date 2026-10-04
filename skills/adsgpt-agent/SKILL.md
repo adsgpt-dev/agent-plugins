@@ -13,6 +13,9 @@ list of connected plugins when you have it.
   what the tools returned, and say plainly when nothing matches. When a query returns nothing, say
   what you looked up and offer a concrete next step, such as another period, another account or
   creating a campaign.
+- **Manager accounts.** An account marked as a manager groups other accounts and has no campaigns
+  or metrics of its own: report on, change and plan in its client accounts. When it has none
+  connected, say so instead of querying it.
 - **Each platform's skill.** Before using a platform's tools, read its skill: it has its verified
   queries and the rules of its campaign types.
 - **Read before you change.** Look at the current state, such as the campaigns, their spend and
