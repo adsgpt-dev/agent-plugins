@@ -3,7 +3,7 @@
 Text ads on Google Search for the people who search what the user offers. The server builds the
 campaign from the plan and the fields of its Google Ads platform: one budget with the platform's
 share, the campaign on the plan's dates (paused unless the user asked to start it), its targeting,
-sitelinks and callouts, one ad group with the keywords, and one responsive search ad per creative
+sitelinks, callouts and structured snippets, one ad group with the keywords, and one responsive search ad per creative
 of the blueprint, leading to the landing page with AdsGPT's tracking. Bidding follows the
 objective: clicks for traffic, conversions for leads and sales.
 
@@ -23,13 +23,25 @@ Write the platform's fields:
   it when you confirm the objective: it matches the ads to more searches than the keywords, which
   it treats as broad match. Without the user's yes, leave it off. Its text customization and final
   URL expansion stay off, as by default: they would change the ads the user approves.
-- **Sitelinks** (`sitelinks`): from 4 to 6, to pages of the brand from `resolve_destination_url` on
-  the landing page's domain, in the plan's language when the site has it. The link text says what
-  the page is, up to 25 characters and different in each one; both descriptions, up to 35
-  characters, or none. Without the brand's pages, leave them out.
-- **Callouts** (`callouts`): from 2 to 4, from the brand's facts, up to 25 characters each. They
-  repeat no text of each other or of the ads. Without facts, leave them out.
-- No exclamation marks or decorative symbols in sitelinks or callouts.
+- **Sitelinks, callouts and structured snippets.** A search campaign is not finished without them:
+  without them its ads rank lower and get fewer clicks. Write them with the plan, not after the
+  launch.
+  - **Sitelinks** (`sitelinks`): from 4 to 6, each to a different page of the brand's site on the
+    landing page's domain that you read and that exists, in the plan's language when the site has
+    it. Point them to what a ready buyer clicks next, such as pricing, plans, reviews or contact,
+    not to pages that repeat the ad. The link text says what the page is, up to 25 characters and
+    different in each one, and both descriptions, up to 35 characters each.
+  - **Callouts** (`callouts`): from 4 to 6, up to 25 characters each: concrete reasons to choose
+    the brand that the site states, such as a figure, a guarantee or a service, not slogans. They
+    repeat no text of each other or of the ads.
+  - **Structured snippets** (`structuredSnippets`): one, or two with different headers, each a
+    header from Google's list in the language of the ads, such as Types, Brands, Service catalog,
+    Courses, Destinations, Models or Styles (Tipos, Marcas, Servicios, Cursos, Destinos, Modelos,
+    Estilos), and from 3 to 10 values of up to 25 characters, all of the kind the header names,
+    such as the formats under Types: values of another kind are the most common rejection.
+  - When the site does not give 4 pages, 4 facts or 3 items of a kind, ask the user for what is
+    missing, in the same question as anything else you still need.
+  - No exclamation marks or decorative symbols in sitelinks or callouts.
 
 **Ad texts.** From 3 to 15 headlines of up to 30 characters and from 2 to 4 descriptions of up to
 90 characters, without repeats.

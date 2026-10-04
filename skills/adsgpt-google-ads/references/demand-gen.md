@@ -33,14 +33,16 @@ What else it needs:
 - **Budget.** Google asks a total budget for at least a minimum per day of the dates: when the
   platform rejects the amount, tell the user and propose a larger budget or fewer days.
 - **Logo.** The server uses `logo` when you set it, the id of a square image of the account's
-  library; otherwise the logo the account already uses or, without one, the brand's logo from
-  `resolve_destination_url`, which it adds to the account as a square. Without any, the platform has an
-  issue: tell the user.
+  library; otherwise the logo the account already uses or, without one, the logo of the plan's
+  `brand`, when it has one, which it adds to the account as a square. Without any, the platform has
+  an issue: tell the user. When neither the account nor the plan has one, ask the user for a link to
+  their logo, add it to the account with `google_ads_upload_images` as a logo and set its id as
+  `logo`.
 - **Images or videos.** Each creative needs at least one image or one video of its idea.
-- **Images**, in 1.91:1 or 1:1; both reach more places. Add them with `save_image_creatives`,
-  each with the text creative it goes with, from images that already exist: the account's library
-  (`google_ads_list_assets`), the brand's site image from `resolve_destination_url`, or URLs the
-  user gives. Never an image an AI model generates.
+- **Images**, in 1.91:1 or 1:1; both reach more places. Add them with `save_image_creatives`, each
+  with the text creative it goes with, from images that already exist, in this order: the account's
+  library (`google_ads_list_assets`), which usually has them, the image the brand's site shares, and
+  URLs the user gives when neither has them. Never an image an AI model generates.
 - **Videos.** The user's videos on YouTube, public or unlisted: ask for their links when the user
   mentions video or YouTube, and save them with `save_video_creatives`, each with the text creative
   it goes with, up to 5 per creative. Horizontal (16:9), square or vertical (9:16, the one Shorts

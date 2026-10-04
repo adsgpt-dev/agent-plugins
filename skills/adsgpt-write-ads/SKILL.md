@@ -15,8 +15,8 @@ The copy of the ads of one campaign plan, for the formats its platforms take.
   audience should act, such as the outcome, a proof, the price, the speed or a risk it avoids, not
   the same message reworded. Name the idea in one sentence.
 - **The real brand.** Name the real brand and product: the brand of the plan, or the one of its
-  landing page. Its summary and facts say what it offers. Invent no prices, offers, discounts,
-  awards or claims that the plan or the brand's facts do not state.
+  landing page. What its site states says what it offers. Invent no prices, offers, discounts,
+  awards or claims that the plan or the site do not state.
 - **What people search.** The keywords are what people search, and what the ads answer: write
   about that, for the people who search it, with their words.
 - **Specific, not generic.** Lead with the offer or the outcome, not the company's name. A fact

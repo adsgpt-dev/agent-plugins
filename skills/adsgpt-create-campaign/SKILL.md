@@ -18,10 +18,18 @@ these steps in order. Ask one thing at a time, and skip what the user already sa
    has several accounts, ask which one. A platform that does not support the objective, or that
    has no skill, is left out: say so.
 3. **Destination.** The landing page. Keep any UTM parameters the user gives: the blueprint uses
-   them. Call `resolve_destination_url` with it and save its brand's `_id` as the blueprint's
-   `brand`: the creative team writes about it. To promote an app, the link to the app in its
-   store, which gives the app and its store; it has no brand, so resolve the user's site when
-   they give it.
+   them. Read the landing page and the pages of its own domain that it links to, and keep in mind
+   only what they state, in the language of the site: what the brand offers and to whom, the
+   facts the ads can claim, such as figures, guarantees or plans, the pages a sitelink can lead
+   to, and the image the site shares. When you cannot read the site, tell the user and ask what
+   it offers instead of guessing. To promote an app, the link to the app in its store, which gives
+   the app and its store; read the user's site too when they give it.
+
+   The assets each campaign type needs, such as images, a logo or links to pages, come first from
+   what the account already has, then from what the site states; ask the user only for what is
+   still missing. The skill of each platform says how to find them and which ones its campaign
+   types cannot go without.
+
 4. **Audience.** Locations, languages, age and gender, and interests, in the user's words.
    Propose a broad audience when they have none in mind.
 5. **Budget and dates.** Ask in one question how much they want to invest and for how long, in

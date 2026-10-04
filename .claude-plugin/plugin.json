@@ -1,7 +1,7 @@
 {
   "name": "adsgpt",
   "displayName": "AdsGPT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create, review and optimize ad campaigns on the ad platforms connected to AdsGPT, such as Google Ads: the AdsGPT MCP server and the skills that guide it.",
   "author": {
     "name": "AdsGPT",
