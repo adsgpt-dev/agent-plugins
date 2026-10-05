@@ -2,7 +2,7 @@
   "mcpServers": {
     "adsgpt": {
       "type": "http",
-      "url": "https://adsgpt.vercel.app/mcp"
+      "url": "https://mcp.adsgpt.dev"
     }
   }
 }

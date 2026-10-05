@@ -51,7 +51,7 @@ signs in with your AdsGPT account on first use.
 - **On your machine, nothing.** The package has no scripts, hooks, commands or binaries: only the
   skills, which are Markdown the model reads, the manifest of each client and the address of the
   MCP server. The skills bring no instructions from anywhere else.
-- **One remote server,** `https://adsgpt.vercel.app/mcp`, over HTTPS (`.mcp.json`). Your client
+- **One remote server,** `https://mcp.adsgpt.dev`, over HTTPS (`.mcp.json`). Your client
   signs in with OAuth 2.1 and keeps the token; it asks for `ads:read` and, the first time a tool
   changes something, for `ads:write`.
 - **What reaches the server:** the calls your client's model makes to its tools, with their inputs,
