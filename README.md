@@ -1,7 +1,7 @@
 # AdsGPT for AI clients
 
 Create, review and optimize ad campaigns from your AI client on the ad platforms your organization
-connected to [AdsGPT](https://adsgpt.vercel.app), such as Google Ads. This package adds two things
+connected to [AdsGPT](https://adsgpt.dev), such as Google Ads. This package adds two things
 to Claude, Codex and Grok:
 
 - **The AdsGPT MCP server**, which reads and changes your ad accounts with your AdsGPT account.
@@ -59,9 +59,8 @@ signs in with your AdsGPT account on first use.
   landing page URL. Never your conversation.
 - **What the server does with them:** it reads and changes the ad accounts your organization
   connected to AdsGPT, through each platform's API, and keeps the plans, ads and a log of every
-  change in your AdsGPT organization. It reads the landing page of a campaign once per site to
-  learn the brand, downloads the images you give by URL to check them, and uploads to the ad
-  account the images a plan needs when you save it.
+  change in your AdsGPT organization. It downloads the images you give by URL to check them, and
+  uploads to the ad account the images a plan needs when you save it.
 
 The privacy policy (`PRIVACY.md`) says what AdsGPT stores and shares.
 
@@ -70,7 +69,6 @@ The privacy policy (`PRIVACY.md`) says what AdsGPT stores and shares.
 | Tool                       | What it does                                                           | Changes something |
 | -------------------------- | ---------------------------------------------------------------------- | ----------------- |
 | `list_accounts`            | Lists the connected ad accounts and the platforms you can connect.     | No                |
-| `resolve_destination_url`  | Reads the brand of a campaign's landing page.                          | Saves the brand   |
 | `save_blueprint`           | Saves a campaign plan and checks it with each platform.                | Yes               |
 | `save_creatives`           | Saves the ad texts of a plan.                                          | Yes               |
 | `save_image_creatives`     | Adds images to the ads of a plan, by URL.                              | Yes               |

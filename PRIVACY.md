@@ -18,7 +18,6 @@ below happens on the AdsGPT server when your client calls one of its tools.
 In your AdsGPT organization, available to its members as their roles allow:
 
 - the campaign plans, their ads, images and videos, and the campaigns they launched;
-- the brand of each landing page: what its site says, its pages and its images, read once per site;
 - a log of every change made to your ad accounts: what changed, what it had before, and the member
   and the client it came from.
 
@@ -27,7 +26,6 @@ In your AdsGPT organization, available to its members as their roles allow:
 - **The ad platforms you connected, such as Google Ads,** through their APIs with the access your
   organization granted: the queries, reports and changes your client asks for, and the images a
   plan uploads to the account.
-- **Firecrawl,** which reads the landing page of a campaign the first time AdsGPT sees its site.
 - **The sites of the images you give by URL,** which AdsGPT downloads to check and upload them.
 
 ## What your client receives
