@@ -92,6 +92,7 @@
             }
           ]
         },
+        "demo_recording_url": "https://www.youtube.com/watch?v=RA1w94YgWGQ",
         "commerce": false,
         "commerce_description": "AdsGPT does not sell products or process payments. Ad spend is billed by each ad platform to the account the user connected."
       }
