@@ -1,6 +1,6 @@
 {
-  "name": "adsgpt-mcp",
-  "description": "The AdsGPT package for AI clients: the AdsGPT MCP server and its skills.",
+  "name": "adsgpt",
+  "description": "AdsGPT's plugins for AI agents.",
   "owner": {
     "name": "AdsGPT",
     "url": "https://adsgpt.dev"
@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "adsgpt",
-      "source": "./",
+      "source": "./plugins/adsgpt",
       "description": "Create, review and optimize ad campaigns on the ad platforms connected to AdsGPT, such as Google Ads."
     }
   ]
