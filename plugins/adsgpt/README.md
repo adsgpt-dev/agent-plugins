@@ -66,24 +66,23 @@ The privacy policy (`PRIVACY.md`) says what AdsGPT stores and shares.
 
 ### Tools
 
-| Tool                       | What it does                                                           | Changes something |
-| -------------------------- | ---------------------------------------------------------------------- | ----------------- |
-| `list_accounts`            | Lists the connected ad accounts and the platforms you can connect.     | No                |
-| `save_blueprint`           | Saves a campaign plan and checks it with each platform.                | Yes               |
-| `save_creatives`           | Saves the ad texts of a plan.                                          | Yes               |
-| `save_image_creatives`     | Adds images to the ads of a plan, by URL.                              | Yes               |
-| `save_video_creatives`     | Adds YouTube videos to the ads of a plan, by link.                     | Yes               |
-| `launch_blueprint`         | Launches a plan on every platform, paused unless you ask otherwise.    | Yes               |
-| `google_ads_report`        | Reports the performance of an account, its campaigns, ads or keywords. | No                |
-| `google_ads_search`        | Queries an account with GAQL.                                          | No                |
-| `google_ads_fields`        | Looks up GAQL fields.                                                  | No                |
-| `google_ads_docs`          | Reads the Google Ads API reference.                                    | No                |
-| `google_ads_list_assets`   | Lists the images and videos of an account.                             | No                |
-| `google_ads_validate`      | Checks changes without applying them.                                  | No                |
-| `google_ads_upload_images` | Uploads images to an account's library.                                | Yes               |
-| `google_ads_update_budget` | Changes a campaign's budget.                                           | Yes               |
-| `google_ads_update_status` | Pauses or enables campaigns, ad groups or ads.                         | Yes               |
-| `google_ads_mutate`        | Makes any other change in an account.                                  | Yes               |
+| Tool                               | What it does                                                           | Changes something |
+| ---------------------------------- | ---------------------------------------------------------------------- | ----------------- |
+| `list_accounts`                    | Lists the connected ad accounts and the platforms you can connect.     | No                |
+| `save_blueprint`                   | Saves a campaign plan and checks it with each platform.                | Yes               |
+| `save_creatives`                   | Saves the ad texts of a plan.                                          | Yes               |
+| `save_image_creatives`             | Adds images to the ads of a plan, by URL.                              | Yes               |
+| `save_video_creatives`             | Adds YouTube videos to the ads of a plan, by link.                     | Yes               |
+| `launch_blueprint`                 | Launches a plan on every platform, paused unless you ask otherwise.    | Yes               |
+| `google_ads_report`                | Reports the performance of an account, its campaigns, ads or keywords. | No                |
+| `google_ads_search`                | Queries an account with GAQL.                                          | No                |
+| `google_ads_fields`                | Looks up GAQL fields.                                                  | No                |
+| `google_ads_docs`                  | Reads the Google Ads API reference.                                    | No                |
+| `google_ads_list_assets`           | Lists the images and videos of an account.                             | No                |
+| `google_ads_upload_images`         | Uploads images to an account's library.                                | Yes               |
+| `google_ads_update_budget`         | Changes a campaign's budget.                                           | Yes               |
+| `google_ads_update_status`         | Pauses or enables campaigns, ad groups or ads.                         | Yes               |
+| `google_ads_add_negative_keywords` | Adds negative keywords to a campaign.                                  | Yes               |
 
 The `google_ads_*` tools appear only when your organization connected Google Ads.
 
