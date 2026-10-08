@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "dev.adsgpt/adsgpt",
+  "title": "AdsGPT",
+  "description": "Create, review and optimize your Google Ads campaigns, approving every change yourself.",
+  "websiteUrl": "https://docs.adsgpt.dev",
+  "repository": {
+    "url": "https://github.com/adsgpt-dev/agent-plugins",
+    "source": "github",
+    "subfolder": "plugins/adsgpt"
+  },
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/adsgpt-dev/agent-plugins/main/plugins/adsgpt/assets/logo.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.adsgpt.dev"
+    }
+  ]
+}

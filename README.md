@@ -48,6 +48,20 @@ scripts/build-openai-zip.sh adsgpt v1  # another plugin or ref
 It writes `<plugin>-<version>.zip` in the current directory, with the Codex manifest, the MCP server,
 the skills, the assets, the README, the privacy policy and the license.
 
+## MCP Registry
+
+`registry/<plugin>/server.json` describes each plugin's MCP server for the official
+[MCP Registry](https://registry.modelcontextprotocol.io), where clients discover it. AdsGPT is
+`dev.adsgpt/adsgpt`: the registry verifies the `dev.adsgpt` namespace with a TXT record on
+`adsgpt.dev` and the Ed25519 key that signs it. To publish a new version, raise `version` and run:
+
+```bash
+cd registry/adsgpt
+mcp-publisher login dns --domain adsgpt.dev \
+  --private-key "$(openssl pkey -in ~/.config/mcp-registry/adsgpt.dev.pem -outform DER | tail -c 32 | xxd -p -c 64)"
+mcp-publisher publish
+```
+
 ## License
 
 MIT (`LICENSE`).
