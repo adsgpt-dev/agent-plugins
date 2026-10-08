@@ -36,6 +36,18 @@ Add the marketplace `adsgpt-dev/agent-plugins` and install a plugin from `adsgpt
 
 Each plugin's README says what it runs, sends and reads, and how to sign in.
 
+## Build a plugin for OpenAI
+
+OpenAI's plugin portal takes each plugin as a ZIP. Build it from a committed ref:
+
+```bash
+scripts/build-openai-zip.sh            # adsgpt from main
+scripts/build-openai-zip.sh adsgpt v1  # another plugin or ref
+```
+
+It writes `<plugin>-<version>.zip` in the current directory, with the Codex manifest, the MCP server,
+the skills, the assets, the README, the privacy policy and the license.
+
 ## License
 
 MIT (`LICENSE`).

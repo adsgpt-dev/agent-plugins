@@ -1,6 +1,6 @@
 {
   "name": "adsgpt",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Create, review and optimize ad campaigns on the ad platforms connected to AdsGPT, such as Google Ads: the AdsGPT MCP server and the skills that guide it.",
   "author": {
     "name": "AdsGPT",
@@ -20,10 +20,10 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "AdsGPT",
-    "shortDescription": "Run your ad campaigns",
-    "longDescription": "Create, review and optimize the ad campaigns of the accounts your organization connected to AdsGPT, such as Google Ads. A new campaign is a plan you approve once before it launches, paused; every other change asks for your approval too. Reports, queries and edits run on the AdsGPT MCP server, signed in with your AdsGPT account.",
+    "shortDescription": "Manage your ad campaigns",
+    "longDescription": "AdsGPT is a campaign management tool for advertisers. It lets you report on, optimize and create the campaigns of your own Google Ads accounts from a conversation, after connecting them to AdsGPT.\n\nAsk how your campaigns performed, find the search terms that spend without converting, pause what wastes money, change budgets, or plan a new Search, Performance Max, Demand Gen, Display or App campaign. A new campaign is a plan you approve once, and it launches paused; every other change asks for your approval before it runs.\n\nAdsGPT does not show ads in ChatGPT or Codex and does not use your data for advertising: it only acts on the ad accounts your organization connected, with your AdsGPT account.",
     "developerName": "AdsGPT",
-    "category": "Productivity",
+    "category": "Business & Operations",
     "capabilities": [
       "Report ad performance",
       "Create campaigns",
