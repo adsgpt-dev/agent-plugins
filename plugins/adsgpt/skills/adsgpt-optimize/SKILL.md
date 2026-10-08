@@ -31,10 +31,9 @@ Before cutting anything:
 Then fix it, in this order:
 
 1. **Negative keywords before pauses.** They stop the searches that waste money and keep the
-   campaign running. The `wasted_spend` report lists them. On Google Ads, add each one with
-   `google_ads_mutate`, as a negative criterion of its campaign, in broad match unless the user
-   asks for another:
-   `{ "campaignCriterionOperation": { "create": { "campaign": "customers/<customer id>/campaigns/<campaign id>", "keyword": { "text": "<search term>", "matchType": "BROAD" }, "negative": true } } }`.
+   campaign running. The `wasted_spend` report lists them. On Google Ads, add them with
+   `google_ads_add_negative_keywords`, all the ones of a campaign in one call, in broad match unless
+   the user asks for another.
 2. **Pause the narrowest thing** that solves the problem: an ad, then an ad group, then the
    campaign. On Google Ads, with `google_ads_update_status`.
 3. **Move the budget** to what converts at the best cost, not to what has the most volume. On

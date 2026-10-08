@@ -1,6 +1,6 @@
 ---
 name: adsgpt-google-ads
-description: Read and change the Google Ads accounts connected to AdsGPT with its google_ads_* tools (performance reports, GAQL queries, field and API reference, the account's images and videos, image uploads, budget and status changes, validation and mutate), and the objectives, campaign types and rules for creating Google Ads campaigns. Use it before any Google Ads query or change, and when a campaign plan includes Google Ads.
+description: Read and change the Google Ads accounts connected to AdsGPT with its google_ads_* tools (performance reports, GAQL queries, field and API reference, the account's images and videos, image uploads, budget and status changes, negative keywords), and the objectives, campaign types and rules for creating Google Ads campaigns. Use it before any Google Ads query or change, and when a campaign plan includes Google Ads.
 ---
 
 # Google Ads
@@ -10,8 +10,8 @@ campaigns, ad groups, ads, keywords, budgets and their metrics (`google_ads_sear
 the API reference (`google_ads_docs`), list the images and videos of the account's library
 (`google_ads_list_assets`), upload images to it (`google_ads_upload_images`), change a campaign's
 budget (`google_ads_update_budget`),
-pause or enable campaigns, ad groups or ads (`google_ads_update_status`),
-check changes without applying them (`google_ads_validate`) and apply them (`google_ads_mutate`).
+pause or enable campaigns, ad groups or ads (`google_ads_update_status`) and add negative
+keywords to a campaign (`google_ads_add_negative_keywords`).
 Each tool takes an account by its `account` id.
 
 ## Reports
@@ -43,8 +43,8 @@ Each tool takes an account by its `account` id.
     locations and languages only:
     `SELECT user_interest.user_interest_id, user_interest.name, user_interest.taxonomy_type FROM user_interest WHERE user_interest.name LIKE '%marketing%' AND user_interest.taxonomy_type IN ('IN_MARKET', 'AFFINITY')`.
     Do not select `user_interest.availabilities`: it lists every language and channel of each
-    interest and fills the context. `google_ads_validate` rejects an interest the campaign type
-    does not take: then choose another.
+    interest and fills the context. Saving the plan lists, among its issues, an interest the
+    campaign type does not take: then choose another.
 - When a query fails, tell the user what you tried and what you are correcting; never go on as if
   it had worked.
 - Money fields ending in `_micros` are millionths of the account's currency: divide them by
@@ -57,12 +57,14 @@ Each tool takes an account by its `account` id.
 - Pause or enable campaigns, ad groups or ads with `google_ads_update_status`, by their ids: an ad
   is `<ad group id>~<ad id>`, both in the `ads` report. Pause the narrowest thing that solves the
   problem.
-- Read the reference with `google_ads_docs` when you are unsure of a field or an operation shape.
-  Every resource and common type has its document, read by its name (`resources.Campaign`). Before
-  creating a resource, check there which fields are read-only and which ones belong to a oneof
-  group. Look up there the field a Google Ads error names.
-- Before proposing a change you are unsure of, check it with `google_ads_validate`: it applies
-  nothing.
+- Add negative keywords to a campaign with `google_ads_add_negative_keywords`, by the campaign's
+  id, in broad match unless the user asks for another.
+- Each change has its own tool. When the user asks for one no tool makes, such as editing an ad's
+  texts, adding keywords or changing bids, say so plainly and suggest making it in Google Ads,
+  without trying another tool.
+- Read the reference with `google_ads_docs` when you are unsure of a field of a query or of an
+  object, read by its name (`resources.Campaign`). Look up there the field a Google Ads error
+  names.
 
 ## Images and logo
 
@@ -73,8 +75,8 @@ lacks, without anything else to do.
   usually has images and a logo it already uses. An image with an `aspectRatio` fits the ads, and
   its URL can go into a plan with `save_image_creatives`; one without it has another shape or is too
   small for the ads, and can still be a logo.
-- To show a new image in a campaign that already runs, upload it with `google_ads_upload_images`,
-  which returns its asset id for a `google_ads_mutate` operation.
+- To have a new image ready for a campaign that already runs, upload it to the library with
+  `google_ads_upload_images`; linking it to that campaign is made in Google Ads.
 - Never an image an AI model generates.
 
 ## Campaign plans
