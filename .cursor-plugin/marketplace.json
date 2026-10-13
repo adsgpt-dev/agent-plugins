@@ -1,0 +1,17 @@
+{
+  "name": "adsgpt",
+  "owner": {
+    "name": "AdsGPT",
+    "email": "hello@adsgpt.dev"
+  },
+  "metadata": {
+    "description": "AdsGPT's plugins for AI agents."
+  },
+  "plugins": [
+    {
+      "name": "adsgpt",
+      "source": "./plugins/adsgpt",
+      "description": "Create, review and optimize ad campaigns on the ad platforms connected to AdsGPT, such as Google Ads."
+    }
+  ]
+}
