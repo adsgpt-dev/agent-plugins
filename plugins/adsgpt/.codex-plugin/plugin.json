@@ -1,6 +1,6 @@
 {
   "name": "adsgpt",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Create, review and optimize ad campaigns on the ad platforms connected to AdsGPT, such as Google Ads: the AdsGPT MCP server and the skills that guide it.",
   "author": {
     "name": "AdsGPT",
@@ -31,8 +31,8 @@
     ],
     "websiteURL": "https://adsgpt.dev",
     "supportURL": "https://github.com/adsgpt-dev/agent-plugins/issues",
-    "privacyPolicyURL": "https://github.com/adsgpt-dev/agent-plugins/blob/main/plugins/adsgpt/PRIVACY.md",
-    "termsOfServiceURL": "https://adsgpt.dev/terms-and-conditions",
+    "privacyPolicyURL": "https://adsgpt.dev/privacy",
+    "termsOfServiceURL": "https://adsgpt.dev/terms",
     "defaultPrompt": [
       "How did my Google Ads campaigns do last week?",
       "Create a search campaign for my website.",

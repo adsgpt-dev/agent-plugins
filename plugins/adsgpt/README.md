@@ -62,7 +62,7 @@ signs in with your AdsGPT account on first use.
   change in your AdsGPT organization. It downloads the images you give by URL to check them, and
   uploads to the ad account the images a plan needs when you save it.
 
-The privacy policy (`PRIVACY.md`) says what AdsGPT stores and shares.
+The [privacy policy](https://adsgpt.dev/privacy) says what AdsGPT stores and shares.
 
 ### Tools
 
