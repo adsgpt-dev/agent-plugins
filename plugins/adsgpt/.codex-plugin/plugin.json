@@ -1,6 +1,6 @@
 {
   "name": "adsgpt",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Create, review and optimize ad campaigns on the ad platforms connected to AdsGPT, such as Google Ads: the AdsGPT MCP server and the skills that guide it.",
   "author": {
     "name": "AdsGPT",
@@ -21,7 +21,7 @@
   "interface": {
     "displayName": "AdsGPT",
     "shortDescription": "Manage your ad campaigns",
-    "longDescription": "AdsGPT is a campaign management tool for advertisers. It lets you report on, optimize and create the campaigns of your own Google Ads accounts from a conversation, after connecting them to AdsGPT.\n\nAsk how your campaigns performed, find the search terms that spend without converting, pause what wastes money, change budgets, or plan a new Search, Performance Max, Demand Gen, Display or App campaign. A new campaign is a plan you approve once, and it launches paused; every other change asks for your approval before it runs.\n\nAdsGPT does not show ads in ChatGPT or Codex and does not use your data for advertising: it only acts on the ad accounts your organization connected, with your AdsGPT account.",
+    "longDescription": "AdsGPT is a campaign management tool for advertisers. It lets you report on, optimize and create the campaigns of your own Google Ads accounts from a conversation, after connecting them to AdsGPT.\n\nAsk how your campaigns performed, find the search terms that spend without converting, pause what wastes money, change budgets, or create a new Search, Performance Max, Demand Gen, Display or App campaign. A new campaign is created paused, and every change asks for your approval before it runs.\n\nAdsGPT does not show ads in ChatGPT or Codex and does not use your data for advertising: it only acts on the ad accounts your organization connected, with your AdsGPT account.",
     "developerName": "AdsGPT",
     "category": "Business & Operations",
     "capabilities": [
@@ -59,10 +59,10 @@
               "expected_behavior": "Lists the search terms with cost and no conversions in the last 30 days, ordered by cost, and proposes negative keywords without applying them."
             },
             {
-              "description": "Create a search campaign as a plan the user approves once, launched paused.",
+              "description": "Create a search campaign after the user approves it, created paused.",
               "prompt": "Create a search campaign for https://adsgpt.dev with a budget of 300 for the next 30 days.",
-              "tools_triggered": "list_accounts, save_blueprint, save_creatives, launch_blueprint",
-              "expected_behavior": "Asks only for what is missing, such as the audience, reads the landing page, saves the plan and its ads, and asks for approval once with a summary of the plan. Once approved, it reports the campaign Google Ads created, paused."
+              "tools_triggered": "list_accounts, google_ads_create_campaign",
+              "expected_behavior": "Asks only for what is missing, such as the audience, reads the landing page, presents the campaign with its budget, dates, targeting and ads, and asks for approval. Once approved, it reports the campaign Google Ads created, paused, with its id."
             },
             {
               "description": "Pause a campaign after the user approves it.",
