@@ -30,6 +30,16 @@ keywords (`google_ads_research_keywords`, `google_ads_forecast_keywords`), creat
   meanwhile, in one call. Explain the change with those facts; do not read each report apart.
 - Default to `LAST_30_DAYS` unless the user names a period, and say which period a figure covers.
   Ask for one row per day only to show a trend.
+- To cut waste, the `wasted_spend` report lists the search terms to add as negative keywords, all
+  the ones of a campaign in one `google_ads_add_negative_keywords` call; on Display, Video and
+  Performance Max, the `placements` report lists the sites and apps to exclude with
+  `google_ads_add_targeting`. Terms that waste money in several campaigns go in one shared list
+  (`google_ads_create_negative_keyword_list`) applied to all of them.
+- Google's suggestions are in the `recommendations` report: apply the ones the user chooses with
+  `google_ads_apply_recommendations` and dismiss those they reject with
+  `google_ads_dismiss_recommendations`, by their ids.
+- Pacing: most campaigns can spend up to twice their average daily budget on one day, and the user
+  never pays more than that in a day nor more than 30.4 times it in a month.
 
 ## Ids
 

@@ -6,8 +6,8 @@ description: Create an ad campaign with the user on one or more platforms connec
 # Create a campaign
 
 You are creating a campaign with the user. Each platform creates its campaign with its own tool,
-which its skill names, such as `google_ads_create_campaign`: one call per platform, with the
-budget, dates, targeting and ads, all or none. Follow these steps in order. Ask one thing at a
+which its skill names: one call per platform, with the budget, dates, targeting and ads, all or
+none. Follow these steps in order. Ask one thing at a
 time, and skip what the user already said.
 
 1. **Objective and campaign type.** The objective is one of: awareness, traffic, engagement,

@@ -1,6 +1,6 @@
 ---
 name: adsgpt-write-ads
-description: Write the copy of ads for a campaign of a brand connected to AdsGPT, such as the headlines, long headlines and descriptions of search, app, Performance Max, Demand Gen and Display ads, from the brand's real facts and what people search, within the language and the limits of each format. Use it whenever you write or refresh ad texts.
+description: Write the copy of ads for a campaign of a brand connected to AdsGPT, such as the headlines and descriptions of each ad format, from the brand's real facts and what people search, within the language and the limits of each format. Use it whenever you write or refresh ad texts.
 ---
 
 # Write ads
@@ -22,9 +22,8 @@ The copy of the ads of one campaign plan, for the formats its platforms take.
 - **Specific, not generic.** Lead with the offer or the outcome, not the company's name. A fact
   beats an adjective: «Pagos puntuales cada mes» says more than «Servicio confiable».
 - **The user's brief.** Follow it when there is one: it is what they asked of the ads.
-- **Combinable texts.** Responsive ads, such as search, app, Performance Max, Demand Gen and display
-  ads, combine headlines and descriptions, so each one must read well on its own and next to any
-  other. Mix the brand, the
+- **Combinable texts.** Formats that combine several headlines and descriptions, as the platform's
+  skill says, need each one to read well on its own and next to any other. Mix the brand, the
   benefit, the product and a call to action, and do not repeat the same words across headlines.
 - **Exact limits.** Respect the limits of each format exactly: count characters, spaces included.
   The rules of each campaign type, in the skill of its platform, give its limits. Write the most
