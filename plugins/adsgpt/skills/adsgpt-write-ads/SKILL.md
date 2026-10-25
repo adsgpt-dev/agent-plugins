@@ -9,7 +9,7 @@ The copy of the ads of one campaign plan, for the formats its platforms take.
 
 - **Language.** Write in the language of the campaign's audience, or in the language of the plan
   when the audience has none. Capitalize as that language does: in Spanish and Portuguese, only the
-  first word and proper nouns («Reserva tu mesa en Madrid», not «Reserva Tu Mesa En Madrid»).
+  first word and proper nouns («Monetiza tu app con Wortise», not «Monetiza Tu App Con Wortise»).
   Title case is an English convention.
 - **One idea per creative.** Each creative is a different idea: a different angle on why the
   audience should act, such as the outcome, a proof, the price, the speed or a risk it avoids, not
