@@ -1,6 +1,6 @@
 # AdsGPT plugin privacy policy
 
-Effective date: October 8, 2026
+Effective date: October 25, 2026
 
 This policy covers the AdsGPT plugin for AI clients, such as ChatGPT, Codex, Claude and Grok, and
 the AdsGPT MCP server it connects to (`https://mcp.adsgpt.dev`). AdsGPT is operated by Bee Holding SAS
@@ -21,8 +21,8 @@ inside your AI client, and it does not use your data for advertising.
   connecting an ad platform, such as Google Ads, which we store encrypted. We never ask for or store
   your ad platform passwords.
 - **Tool inputs:** what your AI client's model sends to each tool, such as ad account IDs, report
-  periods and queries, campaign plans, ad texts, image URLs, YouTube links and landing page URLs.
-  We never receive your conversation with the AI client.
+  periods, new campaigns with their budget, targeting and ads, ad texts, image URLs, YouTube links
+  and landing page URLs. We never receive your conversation with the AI client.
 - **Ad platform data:** the data of the ad accounts your organization connected, such as campaigns,
   ads, keywords, search terms, budgets and their performance, which we read through each platform's
   API when a tool needs it.
@@ -36,8 +36,9 @@ of other services.
 - To sign you in and to act only for the member, organization and access you approved.
 - To run the tools your AI client calls: read reports, make the changes you approve and create the
   campaigns you approve, in the ad accounts your organization connected.
-- To keep, in your organization, the campaign plans, their ads and a log of every change made to
-  your ad accounts: what changed, what it had before, and the member and AI client it came from.
+- To keep, in your organization, a log of every change made to your ad accounts: what changed,
+  what it had before, the member and AI client it came from, and the tool call that made it, with
+  its input.
 - To keep AdsGPT secure, prevent abuse, fix errors and provide support.
 - To comply with the law.
 
@@ -57,12 +58,13 @@ as the law requires.
 ## Who receives it
 
 - **The ad platforms your organization connected,** such as Google Ads, through their APIs and with
-  the access your organization granted: the queries, reports and changes your AI client asks for,
-  and the images a campaign plan uploads to the ad account.
+  the access your organization granted: the reports and changes your AI client asks for, and the
+  images the tools upload to the ad account.
 - **Your AI client and its provider,** such as OpenAI, Anthropic or xAI, which receive the results
   of the tools they call and handle them under their own privacy policies.
-- **The websites of the images you give by URL,** which we download to check them and upload them
-  to your ad account.
+- **The websites of the images and landing pages you give by URL:** we download the images to check
+  them and upload them to your ad account, and open each landing page a change sends to check that
+  it works, without sending them any of your data.
 - **Service providers that host and run AdsGPT,** such as cloud hosting and database providers,
   which process data only on our behalf and under confidentiality and security obligations.
 - **Authorities,** only when the law requires it, and a buyer or successor of our business, under
@@ -73,12 +75,12 @@ as the law requires.
 - **Authorization data:** until the tokens expire or you revoke the AI client's access.
 - **Ad platform connection data:** until your organization disconnects the platform.
 - **Account data:** while your AdsGPT account exists. When you delete your account, we delete it.
-- **Campaign plans, ads and the change log:** while your organization uses AdsGPT, so its members
-  can review what was done. We delete them within 30 days of your organization asking us to.
+- **The change log:** while your organization uses AdsGPT, so its members can review what was
+  done. We delete it within 30 days of your organization asking us to.
 - **Technical data:** with your sign-in sessions until they end, and in server logs for up to 30
   days.
 - **Ad platform data:** we read it from each platform when a tool needs it and do not keep a copy,
-  except what a campaign plan or the change log contains.
+  except what the change log contains.
 
 Deleted data may remain in backups for a limited time until they are replaced. We may keep data
 longer only when the law requires it.
@@ -98,7 +100,9 @@ competent authorities without undue delay, as the law requires.
 
 ## Your choices and controls
 
-- Every tool that changes an ad account asks for your approval in your AI client before it runs.
+- Every tool that changes an ad account tells your AI client so, and your AI client decides whether
+  to ask for your approval before it runs, as its settings say. New campaigns are created paused
+  unless you ask otherwise.
 - Revoke an AI client's access from AdsGPT, or remove the AdsGPT plugin or server from your AI
   client, at any time.
 - Disconnect an ad platform from the **Plugins** screen of AdsGPT at any time. You can also revoke
