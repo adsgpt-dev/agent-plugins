@@ -1,7 +1,7 @@
 {
   "name": "adsgpt",
   "version": "1.0.20",
-  "description": "Create, review and optimize ad campaigns on the ad platforms connected to AdsGPT, such as Google Ads: the AdsGPT MCP server and the skills that guide it.",
+  "description": "Create, review and optimize ad campaigns on the ad platforms connected to AdsGPT, such as Google Ads and Wortise Ads: the AdsGPT MCP server and the skills that guide it.",
   "author": {
     "name": "AdsGPT",
     "url": "https://adsgpt.dev"
@@ -13,6 +13,7 @@
     "adsgpt",
     "advertising",
     "google-ads",
+    "wortise-ads",
     "campaigns",
     "mcp"
   ],
@@ -21,7 +22,7 @@
   "interface": {
     "displayName": "AdsGPT",
     "shortDescription": "Manage your ad campaigns",
-    "longDescription": "AdsGPT is a campaign management tool for advertisers. It lets you report on, optimize and create the campaigns of your own Google Ads accounts from a conversation, after connecting them to AdsGPT.\n\nAsk how your campaigns performed, find the search terms that spend without converting, pause what wastes money, change budgets, or create a new Search, Performance Max, Demand Gen, Display or App campaign. A new campaign is created paused, and every change asks for your approval before it runs.\n\nAdsGPT does not show ads in ChatGPT or Codex and does not use your data for advertising: it only acts on the ad accounts your organization connected, with your AdsGPT account.",
+    "longDescription": "AdsGPT is a campaign management tool for advertisers. It lets you report on, optimize and create the campaigns of your own Google Ads and Wortise Ads accounts from a conversation, after connecting them to AdsGPT.\n\nAsk how your campaigns performed, find the search terms that spend without converting, pause what wastes money, change budgets, or create a new Search, Performance Max, Demand Gen, Display or App campaign on Google Ads, or an in-app display campaign with banners and interstitials on Wortise Ads. A new campaign is created paused, and every change asks for your approval before it runs.\n\nAdsGPT does not show ads in ChatGPT or Codex and does not use your data for advertising: it only acts on the ad accounts your organization connected, with your AdsGPT account.",
     "developerName": "AdsGPT",
     "category": "Business & Operations",
     "capabilities": [
@@ -75,6 +76,18 @@
               "prompt": "Raise the daily budget of my best-converting campaign by 20%.",
               "tools_triggered": "list_accounts, google_ads_report, google_ads_update_budget",
               "expected_behavior": "Finds the campaign with the most conversions, proposes the new daily budget from the current one with both amounts, asks for approval and, once approved, reports the budget Google Ads confirmed."
+            },
+            {
+              "description": "Create a Wortise Ads display campaign after the user approves it, created as a paused draft.",
+              "prompt": "Create a Wortise Ads campaign for https://adsgpt.dev in Argentina with 40 USD in total for December: a banner and an interstitial, with the images https://placehold.co/1250x1000.png and https://placehold.co/1080x1920.png.",
+              "tools_triggered": "list_accounts, wortise_ads_search_targeting, wortise_ads_create_campaign",
+              "expected_behavior": "Asks only for what is missing, such as the CPM to bid, checks the campaign, presents its budget, dates, ad groups and ads, and asks for approval. Once approved, it reports the campaign Wortise Ads created as a paused draft, with its id, and says that launching it debits its budget from the balance."
+            },
+            {
+              "description": "Report the delivery of the connected Wortise Ads account by country.",
+              "prompt": "How many impressions and clicks did my Wortise Ads campaigns get last month, by country?",
+              "tools_triggered": "list_accounts, wortise_ads_report",
+              "expected_behavior": "Reports last month's impressions, clicks and CTR per country, with only the figures the tool returned, and says that Wortise Ads publishes no spend in its reports."
             }
           ],
           "negative": [

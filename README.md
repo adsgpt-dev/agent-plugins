@@ -6,7 +6,7 @@ marketplace that lists them.
 
 | Plugin                        | What it does                                                                                              |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [AdsGPT](plugins/adsgpt)      | Create, review and optimize ad campaigns on the ad platforms connected to AdsGPT, such as Google Ads.     |
+| [AdsGPT](plugins/adsgpt)      | Create, review and optimize ad campaigns on the ad platforms connected to AdsGPT, such as Google Ads and Wortise Ads. |
 
 ## Add the marketplace
 

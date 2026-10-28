@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "dev.adsgpt/adsgpt",
   "title": "AdsGPT",
-  "description": "Create, review and optimize your Google Ads campaigns, approving every change yourself.",
+  "description": "Create, review and optimize your Google Ads and Wortise Ads campaigns, approving every change.",
   "websiteUrl": "https://docs.adsgpt.dev",
   "repository": {
     "url": "https://github.com/adsgpt-dev/agent-plugins",
@@ -16,7 +16,7 @@
       "sizes": ["512x512"]
     }
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "remotes": [
     {
       "type": "streamable-http",

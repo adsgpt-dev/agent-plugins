@@ -1,8 +1,8 @@
 # AdsGPT for AI clients
 
 Create, review and optimize ad campaigns from your AI client on the ad platforms your organization
-connected to [AdsGPT](https://adsgpt.dev), such as Google Ads. This package adds two things
-to Claude, Codex and Grok:
+connected to [AdsGPT](https://adsgpt.dev), such as Google Ads and Wortise Ads. This package adds
+two things to Claude, Codex and Grok:
 
 - **The AdsGPT MCP server**, which reads and changes your ad accounts with your AdsGPT account.
 - **The AdsGPT skills**, the instructions that guide the model through each task: how to create a
@@ -57,12 +57,13 @@ signs in with your AdsGPT account on first use.
   changes something, for `ads:write`.
 - **What reaches the server:** the calls your client's model makes to its tools, with their inputs,
   such as an account id, the report and period you ask for, a new campaign with its budget,
-  targeting and ads, ad texts, image URLs, YouTube links or a landing page URL. Never your
+  targeting and ads, ad texts, image and video URLs, YouTube links or a landing page URL. Never your
   conversation.
 - **What the server does with them:** it reads and changes the ad accounts your organization
   connected to AdsGPT, through each platform's API, and keeps a log of every change in your AdsGPT
-  organization. It downloads the images you give by URL to check them and uploads to the ad account
-  those it lacks, and opens each landing page a change sends, to check that it works.
+  organization. It downloads the images and videos you give by URL to check them and uploads to
+  the ad account those it lacks, and opens each landing page a change sends, to check that it
+  works.
 
 The [privacy policy](https://adsgpt.dev/privacy) says what AdsGPT stores and shares.
 
@@ -111,8 +112,22 @@ The [privacy policy](https://adsgpt.dev/privacy) says what AdsGPT stores and sha
 | `google_ads_remove_targeting`               | Removes locations, audiences and other targeting.                                                   | Yes               |
 | `google_ads_remove_labels`                  | Removes labels.                                                                                     | Yes               |
 | `google_ads_remove_campaigns_groups_or_ads` | Removes campaigns, ad groups, asset groups or ads for good.                                         | Yes               |
+| `wortise_ads_report`                        | Reports the impressions, clicks and CTR of campaigns, by app, city, country or device type.         | No                |
+| `wortise_ads_list_campaigns`                | Lists campaigns with their dates, budget, status and review.                                        | No                |
+| `wortise_ads_get_campaign`                  | Reads a campaign with its ad groups, their targeting, bid and link, and their ads.                  | No                |
+| `wortise_ads_search_targeting`              | Finds locations, interests, app categories, apps and carriers by name.                              | No                |
+| `wortise_ads_forecast_audience`             | Sizes an audience: its reach, the impressions at a CPM and the minimum CPM.                         | No                |
+| `wortise_ads_create_campaign`               | Creates a display campaign with its ad groups and ads, paused unless you ask otherwise.             | Yes               |
+| `wortise_ads_create_ad`                     | Adds image or video ads to an ad group.                                                             | Yes               |
+| `wortise_ads_upload_images`                 | Uploads images to an account's asset library.                                                       | Yes               |
+| `wortise_ads_update_ad_group`               | Changes an ad group's name, targeting, bid, link or UTMs, or pauses it.                             | Yes               |
+| `wortise_ads_update_ad`                     | Changes an ad's name, image or video, or pauses it.                                                 | Yes               |
+| `wortise_ads_update_budget`                 | Changes a campaign's total budget and each ad group's share.                                        | Yes               |
+| `wortise_ads_update_campaign_settings`      | Changes a campaign's name and dates.                                                                | Yes               |
+| `wortise_ads_update_status`                 | Pauses or resumes campaigns, or launches a draft, which debits its budget from your balance.        | Yes               |
 
-The `google_ads_*` tools appear only when your organization connected Google Ads.
+The `google_ads_*` tools appear only when your organization connected Google Ads, and the
+`wortise_ads_*` tools only when it connected Wortise Ads.
 
 ## Skills
 
@@ -121,6 +136,7 @@ The `google_ads_*` tools appear only when your organization connected Google Ads
 | `adsgpt-agent`           | The rules of any request about your ad accounts.                     |
 | `adsgpt-create-campaign` | Creating a campaign, from the objective to the campaign created.     |
 | `adsgpt-google-ads`      | Google Ads: its tools, reports, objectives and campaign types.       |
+| `adsgpt-wortise-ads`     | Wortise Ads: its tools, reports, display campaigns and ad groups.    |
 | `adsgpt-write-ads`       | Writing ad copy from the brand's facts, within each format's limits. |
 | `adsgpt-optimize`        | Reviewing performance and improving spend.                           |
 

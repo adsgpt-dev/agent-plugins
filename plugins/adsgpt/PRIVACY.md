@@ -1,6 +1,6 @@
 # AdsGPT plugin privacy policy
 
-Effective date: October 25, 2026
+Effective date: October 28, 2026
 
 This policy covers the AdsGPT plugin for AI clients, such as ChatGPT, Codex, Claude and Grok, and
 the AdsGPT MCP server it connects to (`https://mcp.adsgpt.dev`). AdsGPT is operated by Bee Holding SAS
@@ -18,14 +18,14 @@ inside your AI client, and it does not use your data for advertising.
 - **Authorization data:** the AI client you connected, its OAuth registration, the access you
   approved (`ads:read`, `ads:write`) and the tokens we issued to it.
 - **Ad platform connection data:** the credentials your organization's owner granted when
-  connecting an ad platform, such as Google Ads, which we store encrypted. We never ask for or store
-  your ad platform passwords.
+  connecting an ad platform, such as an authorization for Google Ads or an API key of Wortise Ads,
+  which we store encrypted. We never ask for or store your ad platform passwords.
 - **Tool inputs:** what your AI client's model sends to each tool, such as ad account IDs, report
-  periods, new campaigns with their budget, targeting and ads, ad texts, image URLs, YouTube links
-  and landing page URLs. We never receive your conversation with the AI client.
+  periods, new campaigns with their budget, targeting and ads, ad texts, image and video URLs,
+  YouTube links and landing page URLs. We never receive your conversation with the AI client.
 - **Ad platform data:** the data of the ad accounts your organization connected, such as campaigns,
-  ads, keywords, search terms, budgets and their performance, which we read through each platform's
-  API when a tool needs it.
+  ad groups, ads, keywords, search terms, targeting, budgets and their performance, which we read
+  through each platform's API when a tool needs it.
 - **Technical data:** the IP address and the time of each request, for security and to limit abuse.
 
 We do not ask for or collect payment card data, health data, government identifiers or passwords
@@ -57,14 +57,17 @@ as the law requires.
 
 ## Who receives it
 
-- **The ad platforms your organization connected,** such as Google Ads, through their APIs and with
-  the access your organization granted: the reports and changes your AI client asks for, and the
-  images the tools upload to the ad account.
+- **The ad platforms your organization connected,** such as Google Ads and Wortise Ads, through
+  their APIs and with the access your organization granted: the reports and changes your AI client
+  asks for, and the images and videos the tools upload to the ad account.
+- **Wortise Ads, when you create an AdsGPT account:** your name, email address and language, to
+  open a Wortise Ads account for your organization and connect it to AdsGPT with its API key,
+  unless Wortise Ads already has an account with that email.
 - **Your AI client and its provider,** such as OpenAI, Anthropic or xAI, which receive the results
   of the tools they call and handle them under their own privacy policies.
-- **The websites of the images and landing pages you give by URL:** we download the images to check
-  them and upload them to your ad account, and open each landing page a change sends to check that
-  it works, without sending them any of your data.
+- **The websites of the images, videos and landing pages you give by URL:** we download the images
+  and videos to check them and upload them to your ad account, and open each landing page a change
+  sends to check that it works, without sending them any of your data.
 - **Service providers that host and run AdsGPT,** such as cloud hosting and database providers,
   which process data only on our behalf and under confidentiality and security obligations.
 - **Authorities,** only when the law requires it, and a buyer or successor of our business, under
@@ -107,7 +110,9 @@ competent authorities without undue delay, as the law requires.
   client, at any time.
 - Disconnect an ad platform from the **Plugins** screen of AdsGPT at any time. You can also revoke
   AdsGPT's access from your Google account at
-  [myaccount.google.com/permissions](https://myaccount.google.com/permissions).
+  [myaccount.google.com/permissions](https://myaccount.google.com/permissions), and delete the API
+  key AdsGPT uses from the
+  [API keys of your Wortise Ads settings](https://ads.wortise.com/en/settings?tab=api_keys).
 - Delete your AdsGPT account from your profile settings.
 
 ## Your rights
@@ -142,9 +147,9 @@ we learn that we have, we delete it.
 
 ## Third-party services
 
-The ad platforms you connect, such as Google Ads, and your AI client and its provider have their own
-terms and privacy policies, which govern how they handle your data. We are not responsible for
-their practices.
+The ad platforms you connect, such as Google Ads and Wortise Ads, and your AI client and its
+provider have their own terms and privacy policies, which govern how they handle your data. We are
+not responsible for their practices.
 
 ## Changes
 
