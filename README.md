@@ -1,9 +1,22 @@
+<p align="center">
+  <a href="https://adsgpt.dev">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset=".github/assets/adsgpt-logo-dark.svg">
+      <img alt="AdsGPT" src=".github/assets/adsgpt-logo-light.svg" width="280">
+    </picture>
+  </a>
+</p>
+
 # AdsGPT for AI agents
 
-Ask your AI agent how your Google Ads campaigns are doing, find the spend that doesn't convert, and
-change budgets, bids, keywords and ads, or create new campaigns, from Claude, ChatGPT, Codex,
-Cursor, Grok or any MCP client. Every change waits for your approval, and new campaigns are created
-paused.
+Ask your AI agent how your ad campaigns are doing, find the spend that doesn't convert, and change
+budgets, bids, keywords and ads, or create new campaigns, from Claude, ChatGPT, Codex, Cursor, Grok
+or any MCP client. Every change waits for your approval, and new campaigns are created paused.
+
+AdsGPT works with Google Ads, Meta Ads, TikTok Ads, LinkedIn Ads, X Ads, Reddit Ads, Unity Ads,
+OpenAI Ads and Wortise Ads. Your AI agent reaches Google Ads today, and the other platforms are on
+their way to the MCP server; meanwhile, they work in [AdsGPT](https://app.adsgpt.dev)'s own
+assistant. See [Ad platforms](https://docs.adsgpt.dev/platforms/).
 
 ![AdsGPT in ChatGPT: "How did my Google Ads campaigns do last week?"](.github/assets/adsgpt-report.gif)
 
@@ -11,9 +24,11 @@ paused.
 
 This repository is the AdsGPT plugin: the [AdsGPT MCP server](https://docs.adsgpt.dev/how-it-works/)
 plus the [skills](plugins/adsgpt/skills) that guide the model through each task, packaged for each
-client. You need an [AdsGPT account](https://app.adsgpt.dev) with Google Ads connected.
+client. You need an [AdsGPT account](https://app.adsgpt.dev) with an ad platform connected.
 
 ## What you can ask
+
+For example, with Google Ads:
 
 | You ask | AdsGPT does |
 | --- | --- |
