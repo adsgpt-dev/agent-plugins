@@ -1,11 +1,4 @@
-<p align="center">
-  <a href="https://adsgpt.dev">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset=".github/assets/adsgpt-logo-dark.svg">
-      <img alt="AdsGPT" src=".github/assets/adsgpt-logo-light.svg" width="280">
-    </picture>
-  </a>
-</p>
+[![AdsGPT](.github/assets/adsgpt-logo.svg)](https://adsgpt.dev)
 
 # AdsGPT for AI agents
 
